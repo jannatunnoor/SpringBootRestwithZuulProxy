@@ -1,0 +1,11 @@
+zuul:
+routes:
+  index:
+    path: /api/**
+    url: http://localhost:8080/
+
+
+
+   zuulDemo1:
+         path: /**
+         url: http://localhost:8000/

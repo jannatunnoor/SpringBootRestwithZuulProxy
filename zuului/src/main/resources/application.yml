@@ -1,0 +1,13 @@
+server:
+  port: 8111
+spring:
+  application:
+    name: zuului
+  main:
+      allow-bean-definition-overriding: true
+
+zuul:
+  routes:
+    api:
+      path: /api/*
+      url: http://localhost:8081/
